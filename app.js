@@ -3,11 +3,11 @@ const path = require("path");
 const mongoose = require("mongoose");
 const app = express()
 const http = require("http")
-const dotenv = require("dotenv");
-dotenv.config();
+
+const dbURI = "mongodb+srv://zayaty:9H3jdMZ3ntLDcowq@cluster0.33tbygn.mongodb.net/Yummy?retryWrites=true&w=majority"
 const port = 3000;
 
-mongoose.connect(process.env.dbURI)
+mongoose.connect(dbURI)
     .then(() => console.log(`[MONGO] Connected to MongoDB`))
     .catch((err) => console.log(`[MONGO] Error connecting to MongoDB: ${err}`));
 
