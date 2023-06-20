@@ -26,6 +26,3 @@ const s = http.createServer(app)
 s.listen(port, () => {
     console.log(`[API] Server listening on http://localhost:${port}`);
 });
-
-
-console.log("Start: " + process.env.ENV);
