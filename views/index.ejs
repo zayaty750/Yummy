@@ -41,7 +41,7 @@
         </form>
 
         <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Login</button>
+          <button type="button" class="btn btn-outline-light me-2" onclick="open_Login()">Login</button>
           <button type="button" class="btn btn-warning" onclick="open_Signup()" >Sign-up</button>
         </div>
       </div>
@@ -133,7 +133,7 @@
       </div>
     </div>
 
-    <div class="row featurette">
+    <div class="row featurette ">
       <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for
             yourself.</span></h2>
@@ -188,7 +188,56 @@
   </div>
 
 
-  <section class="p-5">
+  <div class="modal modal-sheet position-static   p-4 py-md-5 position-fixed z-5  " tabindex="-1" role="dialog" id="modalLogin" style="display: none;" >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header p-5 pb-4 border-bottom-0">
+          <h1 class="fw-bold mb-0 fs-2">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="close_Login()"></button>
+        </div>
+  
+        <div class="modal-body p-5 pt-0">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="Full Name">
+              <label for="floatingInput">Full Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput1" placeholder="name@example.com">
+              <label for="floatingInput1">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Confirm Password">
+              <label for="floatingPassword">Confirm Password</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-warning" type="submit">Login</button>
+            <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+            <hr class="my-4">
+            <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
+              Sign up with Twitter
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
+              Sign up with Facebook
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg>
+              Sign up with GitHub
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="p-5 ">
     <div>
       <h1 class="text-muted">
         Menu
@@ -344,7 +393,12 @@
   </section>
 
 
-  <section class="container-fluid p-4">
+  <section class="container-fluid p-4 ">
+    <div class=" text-center">
+      <h5>
+        FAQs
+      </h5>
+    </div>
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header">
@@ -385,11 +439,15 @@
     </div>
   </section>
 
-  <div class="container">
+  <div class="container mt-5">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
         <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          <i class="fa-sharp fa-solid fa-y"></i>
+          <i class="fa-sharp fa-solid fa-u"></i>
+          <i class="fa-sharp fa-solid fa-m"></i>
+          <i class="fa-sharp fa-solid fa-m"></i>
+          <i class="fa-sharp fa-solid fa-y"></i>
         </a>
         <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
       </div>
