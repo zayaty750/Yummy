@@ -3,7 +3,8 @@ const path = require("path");
 const mongoose = require("mongoose");
 const app = express()
 const http = require("http")
-const dbURI = "mongodb+srv://zayaty:9H3jdMZ3ntLDcowq@cluster0.33tbygn.mongodb.net/?retryWrites=true&w=majority"
+const dotenv = require("dotenv");
+dotenv.config();
 
 const port = 3000;
 
