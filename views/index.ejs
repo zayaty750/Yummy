@@ -48,22 +48,6 @@
     </div>
   </header>
 
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary rounded-3">
-      <li class="breadcrumb-item">
-        <a class="link-body-emphasis" href="#">
-          <svg class="bi" width="16" height="16"><use xlink:href="#house-door-fill"></use></svg>
-          <span >Home</span>
-        </a>
-      </li>
-      <!-- <li class="breadcrumb-item">
-        <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">Library</a>
-      </li>
-      <li class="breadcrumb-item active" aria-current="page">
-        Data
-      </li> -->
-    </ol>
-  </nav>
 
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
     <div class="carousel-indicators">
@@ -114,7 +98,7 @@
     </button>
   </div>
 
-  <section class="container-fluid p-5 ">
+  <section class="container-fluid">
     <div class="container px-4 py-5" id="featured-3">
       <h2 class="pb-2 border-bottom">Columns with icons</h2>
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
@@ -157,7 +141,7 @@
           layout would work with some actual real-world content in place.</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <img src="https://picsum.photos/500/500?random=4" alt="" srcset="">
+        <img src="https://picsum.photos/400/500?random=4" alt="" srcset="">
       </div>
     </div>
   </section>
@@ -359,6 +343,48 @@
     
   </section>
 
+
+  <section class="container-fluid p-4">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
@@ -376,6 +402,7 @@
     </footer>
   </div>
 
+  
 </body>
 
 </html>
