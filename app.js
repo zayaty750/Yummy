@@ -12,9 +12,20 @@ mongoose.connect(process.env.dbURI)
     .then(() => console.log(`[MONGO] Connected to MongoDB`))
     .catch((err) => console.log(`[MONGO] Error connecting to MongoDB: ${err}`));
 
+
 app.set("view engine","ejs");
 
 app.use(express.static(path.join(__dirname, "public")));
+//setup json middleware
+app.use(express.json());
+
+//When extended property is set to true, the URL-encoded data will be parsed with the qs library.
+//qs library allows you to create a nested object from your query string.
+
+// When extended property is set to false, the URL-encoded data will instead be parsed with the query-string library.
+// query-string library does not support creating a nested object from your query string.
+app.use(express.urlencoded({extended:true}));
+
 
 
 const index_router = require("./routes/index.js")
