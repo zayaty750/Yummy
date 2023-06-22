@@ -37,32 +37,37 @@
             <a type="button" class="btn btn-outline-dark " href="/admin/view-products">View Product</a>
           </div>
           <div class="row m-2 justify-content-center">
-            <form action="/admin/add-product" method="post" enctype="multipart/form-data" onsubmit="return validate(this)" >
+            <form action="/admin/add-product" method="post" enctype="multipart/form-data"  >
               <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name" name="name"  >
+                <label for="Name">Name:</label>
+                <input type="text" class="form-control" id="Name" name="Name"  >
                  <div id="nameErr" class="err"> </div>
               </div>
               <div class="form-group">
-                <label for="price">Price:</label>
-                <input type="number" step=".01" class="form-control" id="price" name="price"  >
+                <label for="Price">Price:</label>
+                <input type="number" step=".01" class="form-control" id="Price" name="Price"  >
                 <div id="priceErr" class="err"> </div>
               </div>
               <div class="form-group">
-                <label for="category">Catergory:</label>
-                <input class="form-control" id="category" name="category" rows="3"  ></input>
+                <label for="Catergory">Catergory:</label>
+                <input class="form-control" id="Catergory" name="Catergory" rows="3"  ></input>
                 <div id="catErr" class="err"> </div>
               </div>
               <div class="form-group">
-                <label for="description">Description:</label>
-                <textarea class="form-control" id="description" name="description" rows="3"  ></textarea>
+                <label for="Rating">Rating:</label>
+                <input class="form-control" id="Rating" name="Rating" rows="3"  ></input>
                 <div id="desErr" class="err"> </div>
               </div>
               <div class="form-group">
-                <label for="image">Image:</label>
-                <input type="file" class="form-control-file" id="image" name="image"  >
+                <label for="Description">Description:</label>
+                <textarea class="form-control" id="Description" name="Description" rows="3"  ></textarea>
+                <div id="desErr" class="err"> </div>
               </div>
-              <button type="submit" class="btn btn-primary">Add</button>
+              <div class="form-group mt-2">
+                <label for="Image">Image:</label>
+                <input type="file" class="form-control-file" id="Image" name="Image"  >
+              </div>
+              <button type="submit" class="btn btn-primary mt-3">Add</button>
             </form>
           </div>
       </div>

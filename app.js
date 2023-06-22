@@ -1,6 +1,7 @@
 const express = require('express')
-const path = require("path"); 
 const mongoose = require("mongoose");
+const path = require('path')
+const fileUpload = require('express-fileupload');
 const app = express()
 const http = require("http")
 const dotenv = require("dotenv");
@@ -14,8 +15,8 @@ mongoose.connect(process.env.dbURI)
 
 
 app.set("view engine","ejs");
-
-app.use(express.static(path.join(__dirname, "public")));
+app.use(fileUpload());
+app.use(express.static('public'));
 //setup json middleware
 app.use(express.json());
 

@@ -244,152 +244,26 @@
       </h1>
     </div>
     <div class="row ms-5 mb-4">
-
-      <div class="card col-3 me-2 mb-3" style="width: 18rem;">
-        <img src="https://picsum.photos/500/500?random=5" alt="" srcset=""  class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <% Food.forEach((product) => { %>
+        <div class="card col-3 me-2 mb-3" style="width: 18rem;">
+          <img src="/images/<%=product.Image%>" alt="" srcset=""  class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Name: <%=product.Name%></h5>
+            <p class="card-text">Price: <%=product.Price%></p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Catergory: <%=product.Catergory%></li>
+            <li class="list-group-item">Rating: <%=product.Rating%></li>
+            <li class="list-group-item">Description: <%=product.Description%>s</li>
+          </ul>
+          <div class="card-body">
+            <a href="/index/view/<%=product.id%>" class="btn btn-warning">view</a>
+            <a href="/admin/edit/<%=product.id%>" class="btn btn-warning">Edit</a>
+            <a href="/delete/<%=product.id%>/<%=product.Image%>" class="btn btn-warning">Delete</a>
+          </div>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-
-      <div class="card col-3 me-2 mb-3" style="width: 18rem;">
-        <img src="https://picsum.photos/500/500?random=106" alt="" srcset=""  class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-
-      <div class="card col-3 me-2 mb-3" style="width: 18rem;">
-        <img src="https://picsum.photos/500/500?random=99" alt="" srcset=""  class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-
-      <div class="card col-3 me-2 mb-3" style="width: 18rem;">
-        <img src="https://picsum.photos/500/500?random=100" alt="" srcset=""  class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-
-      <div class="card col-3 me-2 mb-3" style="width: 18rem;">
-        <img src="https://picsum.photos/500/500?random=200" alt="" srcset=""  class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-
-
-
-      <div class="card col-3 me-2 mb-3" style="width: 18rem;">
-        <img src="https://picsum.photos/500/500?random=500" alt="" srcset=""  class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-
-
-      <div class="card col-3 me-2 mb-3" style="width: 18rem;">
-        <img src="https://picsum.photos/500/500?random=400" alt="" srcset=""  class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-
-
-      <div class="card col-3 me-2 mb-3" style="width: 18rem;">
-        <img src="https://picsum.photos/500/500?random=800" alt="" srcset=""  class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-      
-
-
+      <% }); %>
     </div>
-  
-    
   </section>
 
 
